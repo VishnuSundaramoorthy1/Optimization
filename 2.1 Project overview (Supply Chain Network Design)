@@ -1,8 +1,10 @@
 Supply Chain Network Optimization using Mixed-Integer Linear Programming (MILP)
-This repository contains a supply chain network optimization model implemented using JuMP in Julia with the HiGHS solver. The goal is to optimize a multi-echelon supply chain by minimizing operational costs while ensuring demand fulfillment across five regions.
+This repository contains a supply chain network optimization model implemented using JuMP in Julia with the HiGHS solver. 
+The goal is to optimize a multi-echelon supply chain by minimizing operational costs while ensuring demand fulfillment across five regions.
 
 🚀 Problem Overview
-A company operates in five regions: Calopia, Sorange, Tyran, Entworpe, and Fardo, each with unique demand levels. The challenge is to strategically open factories and warehouses while optimizing:
+A company operates in five regions: Calopia, Sorange, Tyran, Entworpe, and Fardo, each with unique demand levels. 
+The challenge is to strategically open factories and warehouses while optimizing:
 
 Production & Capacity Planning 📈
 Facility Location Decisions 🏭
