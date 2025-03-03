@@ -1,36 +1,44 @@
-This repository contains a supply chain optimization model implemented in Julia and data manipulation techniques in Python. 
-The project focuses on warehouse selection, inventory management, and logistics planning to optimize supply chain operations efficiently.
+# Warehouse SKU Assignment Optimization Model
+#### This repository contains a supply chain optimization model implemented in Julia and data manipulation techniques in Python. 
+#### The project focuses on warehouse selection, inventory management, and logistics planning to optimize supply chain operations efficiently.
 
-📌 Project Overview
-The project is divided into two major components:
+## Project Overview
+#### The project is divided into two major components:
 
-🔹 Warehouse Optimization using Julia
-Objective: Assign parts to warehouses optimally to minimize lead time and reorder points (ROP) while maximizing part concentration.
-Methodology:
-Integer Programming (IP) model implemented using JuMP and HiGHS/GLPK solvers.
-Binary decision variables where each part is assigned to exactly one warehouse.
-Constraints:
-If customer concentration ≥ 55%, the part must be assigned to that warehouse.
-Ensures that each part is only assigned to a single warehouse.
-Key Outputs:
-Optimal warehouse assignments for each part.
-CSV output of results (Result_From_Julia_55.csv).
-🔹 Data Manipulation & Logistics Analysis in Python
-Objective: Prepares, cleans, and processes sales, logistics, and inventory data for further modeling.
-Key Steps:
-Reading & filtering sales data (Sales_History_Apodaca.csv).
-Merging & analyzing logistic data (US CAN ZIP CODE FILE 1.xlsx).
-Warehouse location analysis using geopy for distance calculations.
-Statistical modeling using scipy.stats.norm for demand analysis.
-Key Outputs:
-Cleaned and processed sales, logistics, and inventory data.
-Visualizations for warehouse selection & lead time.
-📈 Results & Insights
-✅ Optimized Warehouse Selection for demand fulfillment.
-✅ Minimized Lead Time & Inventory Holding Costs.
-✅ Automated Data Processing for sales & logistics analysis.
-✅ Scalable Supply Chain Decision-Making Model.
-🚀 Future Enhancements
-🔹 Dynamic Demand Forecasting using machine learning.
-🔹 Integrating Uncertainty Modeling for robust supply chain decisions.
-🔹 Adding Cost Optimization for Transportation & Inventory Balancing.
+## Warehouse Optimization using Julia
+#### Objective: Assign parts to warehouses optimally to minimize lead time and reorder points (ROP) while maximizing part concentration.
+#### Methodology:
+
+#### ✔️ Integer Programming (IP) model implemented using JuMP and HiGHS/GLPK solvers.
+#### ✔️ Binary decision variables where each part is assigned to exactly one warehouse.
+
+#### Constraints:
+#### ✔️ If customer concentration ≥ 80%, the part must be assigned to that warehouse.
+#### ✔️ Ensures that each part is only assigned to a single warehouse.
+
+#### Key Outputs:
+#### ✔️ Optimal warehouse assignments for each part.
+
+## Data Manipulation & Logistics Analysis in Python
+#### Objective: Prepares, cleans, and processes sales, logistics, and inventory data for further modeling.
+
+#### Key Steps:
+#### ✔️ Reading & filtering sales data (Sales_History_Apodaca.csv).
+#### ✔️ Merging & analyzing logistic data (US CAN ZIP CODE FILE 1.xlsx).
+#### ✔️ Warehouse location analysis using geopy for distance calculations.
+#### ✔️ Statistical modeling using scipy.stats.norm for demand analysis.
+
+#### Key Outputs:
+#### ✔️ Cleaned and processed sales, logistics, and inventory data.
+#### ✔️ Visualizations for warehouse selection & lead time.
+
+## Results & Insights
+#### ✅ Optimized Warehouse Selection for demand fulfillment.
+#### ✅ Minimized Lead Time & Inventory Holding Costs.
+#### ✅ Automated Data Processing for sales & logistics analysis.
+#### ✅ Scalable Supply Chain Decision-Making Model.
+
+## Future Enhancements
+#### 🔹 Dynamic Demand Forecasting using machine learning.
+#### 🔹 Integrating Uncertainty Modeling for robust supply chain decisions.
+#### 🔹 Adding Cost Optimization for Transportation & Inventory Balancing.
